@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#080b1c">
+    <meta name="description" content="Teste tes connaissances de l'espace avec AstroQuiz, le quiz spatial.">
+    <title>AstroQuiz — Cap sur les étoiles</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <div class="sky" aria-hidden="true"></div>
+    <main class="app">
+      <header class="topbar">
+        <a class="brand" href="#" aria-label="AstroQuiz, accueil">
+          <span class="brand-icon" aria-hidden="true">✦</span>
+          ASTRO<span>QUIZ</span>
+        </a>
+        <span class="edition"><span class="live-dot"></span> MISSION DU JOUR</span>
+      </header>
+
+      <section class="intro" aria-labelledby="page-title">
+        <div class="eyebrow"><span>✧</span> TON VOYAGE COMMENCE ICI</div>
+        <h1 id="page-title">La tête dans<br>les <span>étoiles.</span></h1>
+        <p class="intro-copy">Planètes, galaxies, missions spatiales…<br>Prêt·e à tester tes connaissances ?</p>
+      </section>
+
+      <section class="quiz-card" aria-label="Quiz spatial">
+        <div class="quiz-topline">
+          <span id="question-count">QUESTION 01 <span class="muted">/ 10</span></span>
+          <span class="score-label">✦ <span id="score">0</span> POINTS</span>
+        </div>
+        <div class="progress-track" role="progressbar" aria-label="Progression du quiz" aria-valuemin="0" aria-valuemax="10" aria-valuenow="0">
+          <div class="progress-fill"></div>
+        </div>
+        <div id="quiz-content" aria-live="polite">
+          <div class="question-meta"><span class="planet-icon" aria-hidden="true">🪐</span><span id="category">SYSTÈME SOLAIRE</span></div>
+          <h2 id="question">Chargement du quiz…</h2>
+          <div id="answers" class="answers"></div>
+          <div id="feedback" class="feedback" aria-live="polite"></div>
+          <button id="next-button" class="next-button" type="button" hidden>QUESTION SUIVANTE <span aria-hidden="true">→</span></button>
+        </div>
+        <div id="results" class="results" hidden aria-live="polite"></div>
+      </section>
+
+      <footer>FAIT AVEC <span aria-label="amour">♥</span> ET UN PEU DE POUSSIÈRE D’ÉTOILES</footer>
+    </main>
+  </body>
+</html>
