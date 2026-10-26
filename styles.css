@@ -87,7 +87,7 @@ h1 {
 }
 
 h1 span {
-  color: #b5a0ff;
+  color: blue;
   background: linear-gradient(100deg, #c6adff 5%, #927cff 75%, #7da8ff 100%);
   -webkit-background-clip: text;
   background-clip: text;
